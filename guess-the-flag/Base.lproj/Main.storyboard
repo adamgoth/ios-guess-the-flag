@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,6 +22,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHm-bh-LNu">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="DqV-RO-7EP"/>
+                                    <constraint firstAttribute="width" secondItem="qHm-bh-LNu" secondAttribute="height" multiplier="2:1" id="VVQ-8h-n5s"/>
                                     <constraint firstAttribute="height" constant="100" id="m97-n6-ZAw"/>
                                 </constraints>
                                 <state key="normal" image="us"/>
@@ -31,6 +33,7 @@
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8X-wK-c8P">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="CjS-2h-KWr"/>
+                                    <constraint firstAttribute="width" secondItem="y8X-wK-c8P" secondAttribute="height" multiplier="2:1" id="Hn1-ib-zAf"/>
                                     <constraint firstAttribute="height" constant="100" id="ZJR-RS-dr0"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="us"/>
@@ -40,6 +43,7 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bN-Ne-EbB">
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="1bN-Ne-EbB" secondAttribute="height" multiplier="2:1" id="P1u-i2-gcP"/>
                                     <constraint firstAttribute="width" constant="200" id="VKY-Rm-oCx"/>
                                     <constraint firstAttribute="height" constant="100" id="W9N-Fz-tIi"/>
                                 </constraints>
@@ -52,11 +56,14 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="qHm-bh-LNu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F6x-w2-es5"/>
+                            <constraint firstItem="y8X-wK-c8P" firstAttribute="height" secondItem="qHm-bh-LNu" secondAttribute="height" id="Fsi-Gm-WVa"/>
                             <constraint firstItem="1bN-Ne-EbB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IOB-OF-WS2"/>
                             <constraint firstItem="y8X-wK-c8P" firstAttribute="top" secondItem="qHm-bh-LNu" secondAttribute="bottom" constant="30" id="VFJ-kq-4wK"/>
                             <constraint firstItem="qHm-bh-LNu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="b7h-Vi-dWr"/>
                             <constraint firstItem="1bN-Ne-EbB" firstAttribute="top" secondItem="y8X-wK-c8P" secondAttribute="bottom" constant="30" id="h8d-Ku-zf9"/>
                             <constraint firstItem="y8X-wK-c8P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hbL-94-IRH"/>
+                            <constraint firstItem="1bN-Ne-EbB" firstAttribute="height" secondItem="y8X-wK-c8P" secondAttribute="height" id="jb1-dl-xu6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="1bN-Ne-EbB" secondAttribute="bottom" constant="20" id="wro-bv-hV1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FeG-mk-cfA"/>
